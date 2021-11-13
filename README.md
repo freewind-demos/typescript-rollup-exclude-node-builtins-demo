@@ -1,7 +1,6 @@
-TypeScript Rollup Paths Alias Demo
+TypeScript Rollup Exclude Node Built-ins Demo
 ======================
 
-Handle typescript "paths".
 
 ```
 npm install

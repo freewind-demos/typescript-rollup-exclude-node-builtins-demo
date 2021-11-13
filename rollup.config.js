@@ -1,7 +1,7 @@
 import typescript from '@rollup/plugin-typescript';
-import json from '@rollup/plugin-json';
 import {nodeResolve} from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import nodeBuiltins from 'rollup-plugin-node-builtins';
 
 export default {
   input: './src/main.ts',
@@ -9,7 +9,7 @@ export default {
     nodeResolve(),
     commonjs(),
     typescript(),
-    json()
+    nodeBuiltins()
   ],
   output: {
     file: './dist/bundle.js',

@@ -1,3 +1,6 @@
+import fs from 'fs';
+
 export function hello() {
-  console.log("Hello");
+  const content = fs.readFileSync(__dirname + '/../package.json', 'utf-8');
+  console.log(content);
 }
